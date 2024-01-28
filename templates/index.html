@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <title>CRUD</title>
+</head>
+<body>
+    <h1>CRUD</h1>
+        <a href="{% url 'create' %}"> 
+          <button class="create">CREATE</button>
+        </a>
+
+      <a href="{% url 'read' %}"> 
+         <button class="read">READ</button>
+      </a>
+
+      <a href="{% url 'Update' %}"> 
+        <button class="update">UPDATE</button>
+     </a>
+
+
+      <a href="{% url 'deleted' %}"> 
+        <button class="delete">DELETE</button>
+     </a>
+
+</body>
+</html>

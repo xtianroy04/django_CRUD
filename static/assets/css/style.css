@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.create {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0d9b48;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create:hover {
+    background-color: #0f3312;
+}
+
+.read {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #1e0ad6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read:hover {
+    background-color: #130f33;
+}
+
+.update {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #e0dd0d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update:hover {
+    background-color: #4b4a04;
+}
+
+.delete {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(145, 33, 33);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delte:hover {
+    background-color: #b84545;
+}

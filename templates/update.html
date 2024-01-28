@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/css/read.css' %}">
+    <title>UPDATE</title>
+</head>
+<body>
+    <div>
+        <h1>Update</h1>
+        <table>
+            <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th>Email Address</th>
+            <th>Date Registered</th>
+            <th>Action</th>
+            </tr>
+            {% for student in students %}
+            <tr>
+            <td>{{ student.first_name }}</td>
+            <td>{{ student.last_name }}</td>
+            <td>{{ student.address }}</td>
+            <td>{{ student.phone }}</td>
+            <td>{{ student.email }}</td>
+            <td>{{ student.date_registered }}</td>
+            <td>
+                <a href="{% url 'update_form' student.id %}">
+                    <button class="update">Update</button>
+                </a>
+            </td>   
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="{% url 'index' %}"> 
+            <button>Back</button>
+         </a>
+    </div>
+</body>
+</html>

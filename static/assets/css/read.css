@@ -1,0 +1,59 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td{
+    border: 1px solid #333333;
+}
+
+th, td{
+    padding: 10px;
+    text-align:  left;
+
+}
+
+th{
+    background-color: #264d72;
+
+} 
+
+a button {
+   
+    padding: 10px;
+    background-color: #090116;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.delete {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(145, 33, 33);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: #b84545;
+}
+
+.update {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(206, 203, 36);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update:hover {
+    background-color: #5e5c1b;
+}
