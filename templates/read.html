@@ -12,6 +12,7 @@
         <h1>READ</h1>
         <table>
             <tr>
+            <th>Image</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Address</th>
@@ -21,6 +22,12 @@
             </tr>
             {% for student in students %}
             <tr>
+
+            <td style="text-align: center;">
+                {% if student.img %}
+                <img src="{{ student.img.url }}" style="max-height: 100px;">
+                {% endif %}
+            </td>
             <td>{{ student.first_name }}</td>
             <td>{{ student.last_name }}</td>
             <td>{{ student.address }}</td>

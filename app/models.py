@@ -2,6 +2,7 @@ from django.db import models
 from datetime import datetime
 
 class Students(models.Model):
+    img = models.ImageField(upload_to ='images/', null=True)
     first_name = models.CharField(max_length=255, verbose_name="First Name")
     last_name = models.CharField(max_length=255, verbose_name="Last Name")
     address = models.CharField(max_length=255, verbose_name="Address")

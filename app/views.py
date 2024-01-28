@@ -7,6 +7,7 @@ def index(request):
 
 def create(request):
     if request.method == "POST":
+        image = request.FILES.get('image')
         first_name = request.POST.get('first_name')
         last_name = request.POST.get('last_name')
         address = request.POST.get('address')
@@ -14,6 +15,7 @@ def create(request):
         email = request.POST.get('email')
 
         Students.objects.create(
+            img = image,
             first_name = first_name,
             last_name = last_name,
             address = address,
