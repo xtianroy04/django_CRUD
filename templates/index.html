@@ -10,22 +10,22 @@
 <body>
     <h1>CRUD</h1> 
     {% comment %} Buttons {% endcomment %}
-        <a href="{% url 'create' %}"> 
+    <div class="button-row">
+      <a href="{% url 'create' %}" class="button-link"> 
           <button class="create">CREATE</button>
-        </a>
-
-      <a href="{% url 'read' %}"> 
-         <button class="read">READ</button>
       </a>
-
-      <a href="{% url 'Update' %}"> 
-        <button class="update">UPDATE</button>
-     </a>
-
-
-      <a href="{% url 'deleted' %}"> 
-        <button class="delete">DELETE</button>
-     </a>
-
+  
+      <a href="{% url 'read' %}" class="button-link"> 
+          <button class="read">READ</button>
+      </a>
+  
+      <a href="{% url 'Update' %}" class="button-link"> 
+          <button class="update">UPDATE</button>
+      </a>
+  
+      <a href="{% url 'deleted' %}" class="button-link"> 
+          <button class="delete">DELETE</button>
+      </a>
+  </div>
 </body>
 </html>
