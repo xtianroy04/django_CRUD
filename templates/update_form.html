@@ -10,8 +10,14 @@
 <body>
     <div class="container">
         <h1>Create</h1>
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
+            {% if student.img %}
+                <div style="text-align: center;">
+                    <img src="{{ student.img.url }}" alt="Current Image" style="width: 180px">
+                </div>
+            {% endif %}
+            <input type="file" name="image" accept=".png,.jpeg,.jpg"></input>
             <input type="text" name="first_name" placeholder="First Name" value={{ student.first_name }} required></input>
             <input type="text" name="last_name" placeholder="Last Name" value={{ student.last_name }} required></input>
             <input type="text" name="address" placeholder="Address" value={{ student.address}} required></input>

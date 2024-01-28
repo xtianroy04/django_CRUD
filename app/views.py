@@ -39,12 +39,15 @@ def update_form(request, student_id):
     student = get_object_or_404(Students, pk=student_id)
 
     if request.method == "POST":
+        image = request.FILES.get('image', None)
         first_name = request.POST.get('first_name')
         last_name = request.POST.get('last_name')
         address = request.POST.get('address')
         phone = request.POST.get('phone_number')
         email = request.POST.get('email')
         
+        if image:
+           student.img = image
         student.first_name = first_name
         student.last_name = last_name
         student.address = address
